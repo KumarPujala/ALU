@@ -1,7 +1,8 @@
 # ALU
 Below attached is the Synthesized netlist of ALU
 
-![synthesis](https://github.com/KumarPujala/ALU/assets/65699454/3071567d-f80b-4851-911d-c360b156764f)
+![synthesis](https://github.com/KumarPujala/ALU/assets/65699454/3c8304ca-a296-430b-9a5b-bbba4d880119)
+
 
 And Below is the Final layout after translating the GDSII file into virtuoso
 
