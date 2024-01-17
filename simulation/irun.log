@@ -1,0 +1,54 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Nov 09, 2023 at 15:32:38 IST
+irun
+	alu.v
+	tb_alu.v
+	-access +rwc
+	-coverage all
+	-gui
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source /cad/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> coverage -analyze
+ncsim: *E,CVGIMC: The IMC window cannot be opened before simulation starts.
+ncsim> coverage -analyze
+ncsim: *E,CVGIMC: The IMC window cannot be opened before simulation starts.
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_alu.A tb_alu.B tb_alu.alu_out tb_alu.option
+Created probe 1
+ncsim> run
+ncsim: *E,C58EXE: Coverage database file already exists in the test output directory './cov_work/scope/test', and will not be overwritten. Specify a different name for the test output directory or use the '-covoverwrite' option to overwrite the existing test output directory, and rerun the simulation.
+Simulation complete via $finish(1) at time 80 NS + 0
+./tb_alu.v:35 		$finish;
+ncsim> coverage -analyze
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_alu(tb_alu)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_0dfe48a9_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_0dfe48a9_00000000.ucd
+
+Launching IMC...
+
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_alu(tb_alu)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_0dfe48a9_00000000.ucm (reused)
+  data               :  ./cov_work/scope/test/icc_0dfe48a9_00000000.ucd
+TOOL:	irun(64)	15.20-s051: Exiting on Nov 09, 2023 at 15:34:53 IST  (total: 00:02:15)

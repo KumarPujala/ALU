@@ -1,0 +1,2 @@
+s1(07Nov2023:11:30:16):  irun alu.v tb_alu.v -access +rwc -coverage all -gui 
+s2(09Nov2023:15:32:38):  irun alu.v tb_alu.v -access +rwc -coverage all -gui 

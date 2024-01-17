@@ -1,0 +1,22 @@
+                          CONFORMAL (R)
+                   Version 17.20-s300 (10-Feb-2018) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2018. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+// Warning: This version is 2095 days old. You can download the latest version from http://downloads.cadence.com.
+
+// Command: read_library /home/vlsi6/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib -liberty -both
+// Error: Unknown command read_library /home/vlsi6/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib -liberty -both.
+// Command: read library /home/vlsi6/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib -liberty -both
+// Parsing file /home/vlsi6/pdk/scl_pdk/stdlib/fs120/liberty/lib_flow_ss/tsl18fs120_scl_ss.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:2)
+// Note: (UDP1.1) Swapped set and reset of DFF/DLAT (occurrence:3)
+// Note: (UDP3) Merged redundant user-defined DFF/DLAT primitive(s) (occurrence:3)
+// Note: Read Liberty library successfully
+// Command: write library tsl18fs120_scl_ss.v -verilog -replace
+// Note: Wrote VERILOG library successfully
+// Command: exit

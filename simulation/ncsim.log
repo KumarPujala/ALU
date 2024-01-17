@@ -1,0 +1,26 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> coverage -analyze
+ncsim: *E,NOCOVE: Loaded snapshot was not instrumented for any coverage type. To generate coverage data, coverage type(s) must be specified at the elaboration stage using appropriate coverage options/commands.
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm tb_alu.A tb_alu.B tb_alu.alu_out tb_alu.option
+Created probe 1
+ncsim> run
+Simulation complete via $finish(1) at time 80 NS + 0
+./tb_alu.v:35 		$finish;
+ncsim> coverage -analyze
+ncsim: *E,NOCOVE: Loaded snapshot was not instrumented for any coverage type. To generate coverage data, coverage type(s) must be specified at the elaboration stage using appropriate coverage options/commands.
+ncsim> coverage -analyze
+ncsim: *E,NOCOVE: Loaded snapshot was not instrumented for any coverage type. To generate coverage data, coverage type(s) must be specified at the elaboration stage using appropriate coverage options/commands.
+ncsim> coverage -analyze
+ncsim: *E,NOCOVE: Loaded snapshot was not instrumented for any coverage type. To generate coverage data, coverage type(s) must be specified at the elaboration stage using appropriate coverage options/commands.
+ncsim> ^C
+ncsim> exit
+...Regained control from SimVision
+-------------------------------------
+ncsim: Memory Usage - 38.6M program + 188.3M data = 227.0M total (230.5M Peak)
+ncsim: CPU Usage - 1.2s system + 0.7s user = 1.9s total (88.6s, 2.1% cpu)
