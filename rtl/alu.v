@@ -13,6 +13,7 @@ begin
 		3'b100: alu_out = A|B;
 		3'b101: alu_out = ~A;
 		3'b110: alu_out = ~B;
+		3'b111: alu_out = 0;
 		default: alu_out = 0;
 	endcase
 end 
